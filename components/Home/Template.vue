@@ -1,9 +1,5 @@
 <template>
     <div>
-        <h2>teste2</h2>
+        <h2>ola</h2>
     </div>
 </template>
-
-<script>
-
-</script>
