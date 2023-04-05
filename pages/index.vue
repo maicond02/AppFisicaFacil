@@ -1,5 +1,10 @@
 <template>
     <div>
-        <HomeTemplate />
     </div>
 </template>
+
+<script>
+    definePageMeta({
+        layout: "home"
+    })
+</script>
