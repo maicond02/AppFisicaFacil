@@ -5,7 +5,9 @@
             </template>
             <template #end>
                 <div class="flex flex-wrap">
-                    <Button label="Entrar" text raised severity="secondary"/>
+                    <nuxt-link to="/user/login">
+                        <Button label="Entrar" text raised severity="secondary"/>
+                    </nuxt-link>         
                     <Button label="Registrar" class="ml-2"   text raised severity="secondary"/>
                     <InputText class="ml-2" placeholder="Search" type="text" />
                 </div>
@@ -58,5 +60,8 @@
     }
     :deep(p-menuitem-link):active{
         color: rgb(255, 255, 255) !important;
+    }
+    a{
+        text-decoration: none;
     }
 </style>

@@ -57,6 +57,7 @@ import FileUpload from 'primevue/fileupload';
 import Skeleton  from 'primevue/skeleton';
 import InputSwitch from 'primevue/inputswitch';
 import ToggleButton from 'primevue/togglebutton';
+import Image from 'primevue/image';
 
 export default defineNuxtPlugin(nuxtApp => {
     nuxtApp.vueApp.use(PrimeVue, {ripple: true});
@@ -113,5 +114,6 @@ export default defineNuxtPlugin(nuxtApp => {
     nuxtApp.vueApp.component('Skeleton', Skeleton )    
     nuxtApp.vueApp.component('ToggleButton', ToggleButton)
     nuxtApp.vueApp.component('InputSwitch  ', InputSwitch)
+    nuxtApp.vueApp.component('Image  ', Image)
   })
   
