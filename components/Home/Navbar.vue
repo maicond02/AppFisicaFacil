@@ -1,4 +1,3 @@
-
 <template>
     <div class="card relative z-2">
         <Menubar :model="items">
