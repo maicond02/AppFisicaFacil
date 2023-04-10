@@ -7,8 +7,10 @@
                 <div class="flex flex-wrap">
                     <nuxt-link to="/user/login">
                         <Button label="Entrar" text raised severity="secondary"/>
-                    </nuxt-link>         
-                    <Button label="Registrar" class="ml-2"   text raised severity="secondary"/>
+                    </nuxt-link>  
+                    <nuxt-link to="/user/register">
+                        <Button label="Registrar" class="ml-2"   text raised severity="secondary"/>
+                    </nuxt-link>             
                     <InputText class="ml-2" placeholder="Search" type="text" />
                 </div>
             </template>

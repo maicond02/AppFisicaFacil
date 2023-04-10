@@ -1,6 +1,6 @@
 <template>
     <div>
-        <UserLogin />
+        <UserRegister />
     </div>
 </template>
 
