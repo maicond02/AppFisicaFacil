@@ -1,12 +1,13 @@
 <template>
-    <div>
+    <div class="grid">
         <Card>
             <template #content>
                 <div class="grid">
                     <div class="col">
-                        Bem-vindo à nossa página sobre aprendizagem gratuita de física! Aqui, você encontrará uma variedade de recursos e ferramentas úteis para ajudá-lo a aprender física de forma divertida e gratuita.
+                        <img src="~/assets/images/Launching.gif" alt="" style="width:800px;">
                     </div>
                     <div class="col">
+                        Bem-vindo à nossa página sobre aprendizagem gratuita de física! Aqui, você encontrará uma variedade de recursos e ferramentas úteis para ajudá-lo a aprender física de forma divertida e gratuita.
                     </div>
                 </div>
             </template>
