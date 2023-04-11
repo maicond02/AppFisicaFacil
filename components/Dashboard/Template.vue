@@ -1,6 +1,6 @@
 <template>
     <div class="grid">
-        <Card class="col-2" style="background-color: rgb(23, 23, 23); border: solid 1px rgba(255, 255, 255, 0.034);">
+        <Card class="col-2" style="border: solid 1px rgba(255, 255, 255, 0.119); background-color: rgba(255, 255, 255, 0);">
             <template #content>
                 <div>
                     
@@ -60,8 +60,8 @@
 <style scoped>
 
     :deep(.container-card){
-        border: solid 1px rgba(255, 255, 255, 0.034);
-        background-color: rgb(23, 23, 23);
+        border: solid 1px rgba(255, 255, 255, 0.119);
+        background-color: rgba(255, 255, 255, 0);
         
     }
     :deep(.container-card .p-card){

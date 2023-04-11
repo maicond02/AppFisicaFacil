@@ -31,3 +31,9 @@
     
 
 </script>
+
+<style scoped>
+    :deep(.p-card){
+        border: solid 1px rgba(255, 255, 255, 0.119) !important;
+    }
+</style>

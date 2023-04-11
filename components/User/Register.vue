@@ -49,12 +49,12 @@
 
 <style scoped>
     :deep(.p-card){
-        border: solid 1px rgba(255, 255, 255, 0.034);
+        border: solid 1px rgba(255, 255, 255, 0.119);
         background-color: rgba(255, 255, 255, 0);
         
     }
     .card-1{
-        background: #e5e5f7;
+        background: #ffffff;
     }
     .card-2{
         background-color: rgb(24, 24, 24);

@@ -62,8 +62,8 @@
         color: rgba(255, 255, 255, 0.6);
     }
     :deep(.p-menubar){
-        background-color: rgb(23, 23, 23);
-        border-bottom: solid 1px rgba(255, 255, 255, 0.034);
+        border-bottom: solid 2px rgba(255, 255, 255, 0.119);
+        background-color: rgba(255, 255, 255, 0);
     }
     :deep(.p-inputtext){
         background-color: rgba(255, 255, 255, 0.034);
