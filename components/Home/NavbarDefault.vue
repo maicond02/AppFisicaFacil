@@ -6,10 +6,10 @@
             <template #end>
                 <div class="flex flex-wrap">
                     <nuxt-link to="/user/login">
-                        <Button label="Entrar" text raised severity="secondary"/>
+                        <Button label="Entrar" severity="success" text raised />
                     </nuxt-link>  
                     <nuxt-link to="/user/register">
-                        <Button label="Registrar" class="ml-2"   text raised severity="secondary"/>
+                        <Button label="Registrar" class="ml-2" severity="success" outlined/>
                     </nuxt-link>             
                     <InputText class="ml-2" placeholder="Search" type="text" />
                 </div>
@@ -46,9 +46,6 @@
 </script>
 
 <style scoped>
-    :deep(.p-button-label){
-        color: rgba(255, 255, 255, 0.6);
-    }
     :deep(.p-menubar){
         background-color: rgba(23, 23, 23, 0);
         border-bottom: solid 2px rgba(255, 255, 255, 0.119);

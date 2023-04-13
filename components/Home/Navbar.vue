@@ -4,11 +4,6 @@
             <template #start>
             </template>
             <template #end>
-                <div class="flex flex-wrap">
-                    <Button label="Entrar" text raised severity="secondary"/>
-                    <Button label="Registrar" class="ml-2"   text raised severity="secondary"/>
-                    <InputText class="ml-2" placeholder="Search" type="text" />
-                </div>
             </template>
         </Menubar>
     </div>
@@ -58,9 +53,6 @@
 </script>
 
 <style scoped>
-    :deep(.p-button-label){
-        color: rgba(255, 255, 255, 0.6);
-    }
     :deep(.p-menubar){
         border-bottom: solid 2px rgba(255, 255, 255, 0.119);
         background-color: rgba(255, 255, 255, 0);
