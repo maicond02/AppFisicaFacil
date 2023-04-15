@@ -2,34 +2,45 @@
     <div>
         <Card>
             <template #content>
-                <div class="flex align-items-center justify-content-center">
-                    <Card class="card-1" style="width: 30%; height: 70vh;">
-                        <template #content>     
-                            <div>
-                                <h2 class="flex flex-wrap align-items-center justify-content-center" style="color: black;">Registre-se</h2>
-                            </div>
-                            <div class="flex flex-column align-items-center justify-content-center">
-                                <label class="mt-2" style="color:black;">Email</label>
-                                <InputText v-model="userData.email" class="mt-2"/>
-                                <label class="mt-4" style="color: black;">Senha</label>
-                                <InputText v-model="userData.password" class="mt-2"/>
-                                
-                            </div>
-                            <div class="flex flex-wrap align-items-center justify-content-center">
-                                <Button @click="login" label="Login" class="mt-4" raised />
-                            </div>
-                            <div class="flex flex-wrap align-items-center justify-content-center">
-                                <Button label="Esqueceu a senha?" class="mt-4" text   />
-                            </div>
-                        </template>
-                    </Card>
-                    <Card class="card-2" style="width: 40%; height: 70vh;">
-                        <template #content>
-                            <div>
-                                
-                            </div>
-                        </template>
-                    </Card>
+                <div class="grid">
+                    <div class="col flex align-items-center justify-content-end mr-1">
+                        <Card class="shadow-6 sm:w-15rem md:w-30rem" style="min-height: 50vh;" >
+                            <template #title>
+                                <div class="flex align-items-center justify-content-center">
+                                    Registrar-se
+                                </div>
+                            </template>
+                            <template #content>
+                                <div class="flex flex-column align-items-center justify-content-center">
+                                    <div class="flex flex-column">
+                                        <label class="mt-2">Nome de Usuário</label>
+                                        <InputText class="mt-2"/>
+                                    </div>
+                                    <div class="flex flex-column">
+                                        <label class="mt-2">Email</label>
+                                        <InputText class="mt-2"/>
+                                    </div>
+                                    <div class="flex flex-column">
+                                        <label class="mt-2">Senha</label>
+                                        <InputText class="mt-2"/>
+                                    </div>
+                                    <div class="flex flex-column"> 
+                                        <Button label="Registrar-se" class="mt-4" severity="success" text raised />
+                                        <Button label="ou, entre em sua conta" class="mt-2" severity="success" text />
+                                    </div>
+                                </div>
+                            </template>
+                        </Card>
+                    </div>
+                    <div class="col flex align-items-center justify-content-start">
+                        <Card class="shadow-6 sm:w-15rem md:w-30rem" style="min-height: 50vh;">
+                            <template #content>
+                                <div>
+                                    <img src="~/assets/images/alien.gif" width="80%">
+                                </div>
+                            </template>
+                        </Card>
+                    </div>
                 </div>
             </template>
         </Card>
@@ -42,8 +53,8 @@
             return {
                 userData:{
                     email:null,
-                    password:null
-                }
+                    password:null,
+                },
             }
         },
         methods:{
@@ -51,8 +62,8 @@
                 if(this.userData.password == 'admin' || this.userData.password == '123'){
                     window.location.replace('/dashboard')
                 }
-            }
-        }
+            },
+        },
     }
 
 </script>
