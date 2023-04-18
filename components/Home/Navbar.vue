@@ -15,8 +15,8 @@
             return {
                 items: [
                   {
-                     label:'Home',
-                     to:'/'
+                     label:'Dashboard',
+                     to:'/dashboard'
                   },
                   {
                      label:'Aulas',

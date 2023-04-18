@@ -4,7 +4,7 @@
             <template #content>
                 <div class="grid">
                     <div class="col flex align-items-center justify-content-end mr-1">
-                        <Card class="shadow-6 sm:w-15rem md:w-30rem" style="min-height: 50vh;" >
+                        <Card class="shadow-6 sm:w-15rem md:w-30rem" style="min-height: 80vh;" >
                             <template #title>
                                 <div class="flex align-items-center justify-content-center">
                                     Registrar-se
@@ -33,7 +33,7 @@
                         </Card>
                     </div>
                     <div class="col flex align-items-center justify-content-start">
-                        <Card class="shadow-6 sm:w-15rem md:w-30rem" style="min-height: 50vh;">
+                        <Card class="shadow-6 sm:w-15rem md:w-30rem" style="min-height: 80vh;">
                             <template #content>
                                 <div>
                                     <img src="~/assets/images/alien.gif" width="80%">
