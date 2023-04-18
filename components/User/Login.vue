@@ -14,7 +14,7 @@
                                 <div class="flex flex-column align-items-center justify-content-center">
                                     <div class="flex flex-column">
                                         <label class="mt-2">Usuário ou Email</label>
-                                        <InputText class="mt-2"/>
+                                        <InputText v-model="userStore.userData.user" class="mt-2"/>
                                     </div>
                                     <div class="flex flex-column">
                                         <label class="mt-2">Senha</label>
@@ -44,20 +44,22 @@
 </template>
 
 <script>
+import {useUserStore} from '~/store/user'
+
      export default {
         data() {
             return {
-                userData:{
-                    email:null,
-                    password:null,
-                },
+                userStore: useUserStore(),
                 gifUrl:'@/assets/images/space.gif'
             }
         },
         methods:{
             login(){
+                if(this.userStore.userData.user == 'admin' || this.userStore.userData.password == '123'){
+                    window.location.replace('/dashboard')  
+                }
                 //if(this.userData.password == 'admin' || this.userData.password == '123'){
-                    window.location.replace('/dashboard')
+                    //window.location.replace('/dashboard')
                 //}
             },
         },
