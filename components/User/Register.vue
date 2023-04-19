@@ -33,13 +33,7 @@
                         </Card>
                     </div>
                     <div class="col flex align-items-center justify-content-start">
-                        <Card class="shadow-6 sm:w-15rem md:w-30rem" style="min-height: 80vh;">
-                            <template #content>
-                                <div>
-                                    <img src="~/assets/images/alien.gif" width="80%">
-                                </div>
-                            </template>
-                        </Card>
+                        <img src="~/assets/images/alien.gif" style="width: 80%;">
                     </div>
                 </div>
             </template>

@@ -4,7 +4,7 @@
             <Card class="p-2 user-menu" style="border: solid 1px rgba(255, 255, 255, 0.119); background-color: rgba(255, 255, 255, 0);">
                 <template #title>
                     <div>
-                        <Card style="background-color: rgb(46, 46, 46);">
+                        <Card style="background-color: rgb(24, 24, 24);">
                             <template #content>
                                 <div class="flex align-items-center justify-content-center" style="height: 5vh;">
                                     <UserMenu class="absolute mt-6"/>
@@ -109,7 +109,7 @@
         
     }
     :deep(.container-card .p-card){
-        background-color: rgb(46, 46, 46);
+        background-color: rgb(24, 24, 24);
     }
     .user-menu :deep(.p-card-body){
         padding: 0;

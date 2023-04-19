@@ -29,13 +29,7 @@
                         </Card>
                     </div>
                     <div class="col flex align-items-center justify-content-start">
-                        <Card class="shadow-6 sm:w-15rem md:w-30rem" style="min-height: 80vh;">
-                            <template #content>
-                                <div class="flex align-items-center justify-content-center">
-                                    <img src="~/assets/space.png" width="80%" />
-                                </div>
-                            </template>
-                        </Card>
+                        <img src="~/assets/images/space.gif" style="width: 80%;" />
                     </div>
                 </div>
             </template>
@@ -55,7 +49,7 @@ import {useUserStore} from '~/store/user'
         },
         methods:{
             login(){
-                if(this.userStore.userData.user == 'admin' || this.userStore.userData.password == '123'){
+                if(this.userStore.userData.user == 'admin' && this.userStore.userData.password == '123'){
                     window.location.replace('/dashboard')  
                 }
                 //if(this.userData.password == 'admin' || this.userData.password == '123'){

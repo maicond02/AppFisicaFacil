@@ -3,16 +3,8 @@
         <Card>
             <template #content>
                 <div class="grid">
-                    <div class="col" style="min-height: 360px;">
-                        <Card style="min-height: 615px;">
-                            <template #content>
-                                <div class="flex-column">
-                                    <div class="flex align-items-center justify-content-center">
-                                        <img src="~/assets/images/Launching.gif" alt="" style="width:360px;">
-                                    </div> 
-                                </div>
-                            </template>
-                        </Card>  
+                    <div class="col flex align-items-center justify-content-center" style="min-height: 500px;">
+                        <img src="~/assets/images/Launching.gif" alt="" style="width:500px;">
                     </div>
                     <div class="col">
                         <div>
