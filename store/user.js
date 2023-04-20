@@ -2,11 +2,10 @@ import {defineStore} from "pinia"
 
 export const useUserStore = defineStore('toast', {
     state: () => ({
-        userData:{
-            user:[],
-            email:[],
-            password:[],
-        },
+        userData:null,
+        teste:{
+            user:'maicon'
+        }
     }),
 
     getters: {
@@ -14,6 +13,9 @@ export const useUserStore = defineStore('toast', {
     },
   
     actions: {
-
+        registerNewUser(data){
+            this.userData = data
+            console.log(this.userData)
+        }
     },
 })

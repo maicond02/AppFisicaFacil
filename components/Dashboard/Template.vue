@@ -1,6 +1,6 @@
 <template>
     <div class="grid">
-        <div class="col-2">
+        <div class="menu-lateral col lg:col-2">
             <Card class="p-2 user-menu" style="border: solid 1px rgba(255, 255, 255, 0.119); background-color: rgba(255, 255, 255, 0);">
                 <template #title>
                     <div>
@@ -16,17 +16,17 @@
                 <template #content>
                     <div class="flex align-items-center justify-content-center">
                         <div>
-                            Maicon Alves
+                            {{ userStore.userData.user }}
                         </div>
                     </div>
                 </template>
             </Card>
         </div>
-        <div class="col-10">
+        <div class="col lg:col-10 sm:col-12">
             <Card class="container-card">
                 <template #content>
                     <div class="grid">
-                        <div class="col-4">
+                        <div class="col lg:col-4 sm:col-12">
                             <nuxt-link to="/aulas/fisica-1">
                                 <Card class="card">
                                     <template #content>
@@ -38,7 +38,7 @@
                                 </Card>
                             </nuxt-link>
                         </div>
-                        <div class="col-4">
+                        <div class="col lg:col-4 sm:col-12">
                             <nuxt-link to="/aulas/fisica-2">
                                 <Card class="card">
                                     <template #content>
@@ -50,7 +50,7 @@
                                 </Card>
                             </nuxt-link>
                         </div>
-                        <div class="col-4">
+                        <div class="col lg:col-4 sm:col-12">
                             <nuxt-link to="/aulas/fisica-3">
                                 <Card class="card">
                                     <template #content>
@@ -64,16 +64,16 @@
                         </div>
                     </div>
                     <div class="grid">
-                        <div class="col-6">
+                        <div class="col lg:col-6 md:col-12 sm:col-12">
                             <Card class="card">
                                 <template #content>
                                     <div class="flex align-items-center justify-content-center">
-                                        <p style="color:#3cba5c">Conteúdo complementar</p>
+                                        <p style="color:#3cba5c">Materiais</p>
                                     </div>
                                 </template>
                             </Card>
                         </div>
-                        <div class="col-6">
+                        <div class="col lg:col-6 md:col-12 sm:col-12">
                             <Card class="card">
                                 <template #content>
                                     <div class="flex align-items-center justify-content-center">
@@ -90,9 +90,11 @@
 </template>
 
 <script>
+    import {useUserStore} from '~/store/user'
     export default {
     data() {
         return {
+            userStore: useUserStore(),
             value: 60,
             valuedois: 30,
             valuetres: 75,
@@ -119,5 +121,10 @@
     }
     a{
         text-decoration: none;
+    }
+    @media (max-width: 600px) {
+        .menu-lateral {
+            display: none;
+        }
     }
 </style>

@@ -3,8 +3,8 @@
         <Card>
             <template #content>
                 <div class="grid">
-                    <div class="col flex align-items-center justify-content-end mr-1">
-                        <Card class="shadow-6 sm:w-15rem md:w-30rem" style="min-height: 80vh;" >
+                    <div class="col">
+                        <Card class="shadow-6 sm:w-15rem md:w-30rem" >
                             <template #title>
                                 <div class="flex align-items-center justify-content-center">
                                     Login
@@ -28,8 +28,8 @@
                             </template>
                         </Card>
                     </div>
-                    <div class="col flex align-items-center justify-content-start">
-                        <img src="~/assets/images/space.gif" style="width: 80%;" />
+                    <div class="col">
+                        <img src="~/assets/images/space.gif" />
                     </div>
                 </div>
             </template>
@@ -79,5 +79,10 @@ import {useUserStore} from '~/store/user'
     :deep(.p-inputtext){
         background-color: rgb(24, 24, 24);
         border: solid 1px black;
+    }
+
+    img{
+        max-width: 80vw;
+        max-height: 80vh;
     }
 </style>
