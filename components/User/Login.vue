@@ -14,11 +14,11 @@
                                 <div class="flex flex-column align-items-center justify-content-center">
                                     <div class="flex flex-column">
                                         <label class="mt-2">Usuário ou Email</label>
-                                        <InputText v-model="userStore.userData.user" class="mt-2"/>
+                                        <InputText v-model="userData.user" class="mt-2"/>
                                     </div>
                                     <div class="flex flex-column">
                                         <label class="mt-2">Senha</label>
-                                        <InputText class="mt-2"/>
+                                        <InputText v-model="userData.password" class="mt-2"/>
                                     </div>
                                     <div class="flex flex-column"> 
                                         <Button label="Entrar" @click="login()" class="mt-8" severity="success" text raised />
@@ -44,17 +44,17 @@ import {useUserStore} from '~/store/user'
         data() {
             return {
                 userStore: useUserStore(),
+                userData:{
+                    user:null,
+                    email:null,
+                    password:null,
+                },
                 gifUrl:'@/assets/images/space.gif'
             }
         },
         methods:{
             login(){
-                if(this.userStore.userData.user == 'admin' && this.userStore.userData.password == '123'){
-                    window.location.replace('/dashboard')  
-                }
-                //if(this.userData.password == 'admin' || this.userData.password == '123'){
-                    //window.location.replace('/dashboard')
-                //}
+
             },
         },
         mounted(){
