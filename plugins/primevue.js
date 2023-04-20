@@ -12,7 +12,7 @@ import Column from "primevue/column";
 import Row from "primevue/row";
 import ColumnGroup from "primevue/columngroup";
 import DataView from "primevue/dataview";
-import DataViewLayoutOptions from "primevue/dataViewLayoutOptions";
+import DataViewLayoutOptions from 'primevue/dataviewlayoutoptions';
 import TabView from "primevue/tabview";
 import TabPanel from "primevue/tabpanel";
 import Dialog from "primevue/dialog";
