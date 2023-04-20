@@ -63,4 +63,10 @@
     a{
         text-decoration: none;
     }
+
+    @media (max-width: 600px) {
+        input {
+            display: none;
+        }
+    }
 </style>

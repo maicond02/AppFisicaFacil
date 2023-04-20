@@ -1,10 +1,12 @@
 <template>
-    <div class="grid">
+    <div>
         <Card>
             <template #content>
                 <div class="grid">
-                    <div class="col flex align-items-center justify-content-center" style="min-height: 500px;">
-                        <img src="~/assets/images/Launching.gif" alt="" style="width:500px;">
+                    <div class="col">
+                        <div class="flex-auto">
+                            <img src="~/assets/images/Launching.gif" alt="">
+                        </div>
                     </div>
                     <div class="col">
                         <div>
@@ -74,5 +76,10 @@
 <style scoped>
     :deep(.p-card){
         border: solid 1px rgba(255, 255, 255, 0.119) !important;
+    }
+    
+    img{
+        max-width: 80vw;
+        max-height: 80vh;
     }
 </style>
