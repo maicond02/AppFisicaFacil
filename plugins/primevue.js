@@ -5,7 +5,7 @@ import PrimeVue from "primevue/config";
 import Card from "primevue/card";
 import Panel from "primevue/panel";
 import Fieldset from "primevue/fieldset";
-import Accordion from "primevue/accordion";
+import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 import DataTable from "primevue/dataTable";
 import Column from "primevue/column";
