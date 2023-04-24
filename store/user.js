@@ -1,8 +1,13 @@
 import {defineStore} from "pinia"
+import {useAPIStore} from './api'
 
-export const useUserStore = defineStore('toast', {
+const API = useAPIStore()
+
+export const useUserStore = defineStore('USER', {
     state: () => ({
+        baseUrl: 'http://localhost:3001/',
         userData:null,
+        getUserData:null,
         teste:{
             user:'maicon'
         }
@@ -13,10 +18,19 @@ export const useUserStore = defineStore('toast', {
     },
   
     actions: {
-        async registerNewUser(data){
+        async loadUsers(){            
+            let response = await fetch(this.baseUrl + 'user', {    
+                headers: {
+                'Content-Type': 'application/json'
+                }, 
+                method: "GET", 
+            }).then(res => res.json())
+            this.getUserData = response
+            console.log(this.getUserData)
+        },
+        async registerNewUser(data){            
             this.userData = data
-            console.log(this.userData)
-            let response = await fetch('http://localhost:3001/user', { method: "POST", body: JSON.stringify(data) }).then(res => res.json())
+            API.requestPost('user', data)
         },
     },
 })

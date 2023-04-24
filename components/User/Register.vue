@@ -93,8 +93,8 @@
         border: solid 1px black;
     }
     img{
-        max-width: 50vw;
-        max-height: 50vh;
+        max-width: 70vw;
+        max-height: 70vh;
     }
     @media (max-width: 600px) {
         img {

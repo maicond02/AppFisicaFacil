@@ -54,11 +54,20 @@ import {useUserStore} from '~/store/user'
         },
         methods:{
             login(){
-
+                let dados = this.userStore.getUserData
+                console.log('...', dados)
+                const usuario = dados.find(item => {
+                    if(item.user == this.userData.user && item.password == this.userData.password){
+                        this.userStore.userData = {user: item.user}
+                        this.$router.push('/dashboard');
+                    }else{
+                        console.log('nao foi')
+                    }
+                })
             },
         },
         mounted(){
-
+            this.userStore.loadUsers()
         }
     }
 
