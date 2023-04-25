@@ -19,7 +19,7 @@ export const useUserStore = defineStore('USER', {
   
     actions: {
         async loadUsers(){            
-            let response = await fetch(this.baseUrl + 'user', {    
+            let response = await fetch('http://localhost:3001/user', {    
                 headers: {
                 'Content-Type': 'application/json'
                 }, 

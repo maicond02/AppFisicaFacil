@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Toast />
         <Card>
             <template #content>
                 <div class="grid">
@@ -59,7 +60,10 @@ import {useUserStore} from '~/store/user'
                 const usuario = dados.find(item => {
                     if(item.user == this.userData.user && item.password == this.userData.password){
                         this.userStore.userData = {user: item.user}
-                        this.$router.push('/dashboard');
+                        this.$toast.add({ severity: 'success', summary: `Bem vindo - ${item.user}`, detail: 'Estamos redirecionando você', life: 3000 });
+                        setTimeout(() => {
+                            this.$router.push('/dashboard');
+                        }, 2000);
                     }else{
                         console.log('nao foi')
                     }
