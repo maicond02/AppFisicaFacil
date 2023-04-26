@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h2>teste</h2>
+        <AulasFisica-3 />
     </div>
 </template>
