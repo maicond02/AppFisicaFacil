@@ -37,6 +37,7 @@
                         {
                            label:'Perfil',
                            icon:'pi pi-fw pi-user-plus',
+                           to:'/user/profile'
   
                         },
                         {
@@ -55,7 +56,7 @@
 <style scoped>
     :deep(.p-menubar){
         border-bottom: solid 2px rgba(255, 255, 255, 0.119);
-        background-color: rgba(255, 255, 255, 0);
+        background-color: transparent;
     }
     :deep(.p-inputtext){
         background-color: rgba(255, 255, 255, 0.034);
@@ -64,7 +65,7 @@
     :deep(.p-menuitem-text):active{
         color: rgb(255, 255, 255) !important;
     }
-    :deep(p-menuitem-link):active{
-        color: rgb(255, 255, 255) !important;
+    :deep(.p-menuitem-link){
+        background-color: rgb(18, 18, 18) !important;
     }
 </style>

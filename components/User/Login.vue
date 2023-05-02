@@ -19,7 +19,7 @@
                                     </div>
                                     <div class="flex flex-column">
                                         <label class="mt-2">Senha</label>
-                                        <InputText v-model="userData.password" class="mt-2"/>
+                                        <InputText v-model="userData.password" class="mt-2" type="password"/>
                                     </div>
                                     <div class="flex flex-column"> 
                                         <Button label="Entrar" @click="login()" class="mt-8" severity="success" text raised />
