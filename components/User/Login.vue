@@ -55,6 +55,7 @@ import {useUserStore} from '~/store/user'
         },
         methods:{
             login(){
+                /*
                 let dados = this.userStore.getUserData
                 console.log('...', dados)
                 const usuario = dados.find(item => {
@@ -68,6 +69,8 @@ import {useUserStore} from '~/store/user'
                         console.log('nao foi')
                     }
                 })
+                */
+                this.$router.push('/dashboard');
             },
         },
         mounted(){

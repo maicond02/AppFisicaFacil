@@ -63,9 +63,9 @@ import Knob from 'primevue/knob';
 export default defineNuxtPlugin(nuxtApp => {
     nuxtApp.vueApp.use(ToastService)
     nuxtApp.vueApp.use(DialogService)
+    nuxtApp.vueApp.directive('badge', BadgeDirective);
 
     nuxtApp.vueApp.use(PrimeVue, {ripple: true});
-    nuxtApp.vueApp.use('badge', BadgeDirective);
     nuxtApp.vueApp.component('Button', Button);
     nuxtApp.vueApp.component('Card',Card)
     nuxtApp.vueApp.component('Panel',Panel)

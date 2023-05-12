@@ -16,7 +16,7 @@
                 <template #content>
                     <div class="flex align-items-center justify-content-center">
                         <div>
-                            {{ userStore.userData.user }}
+                            {{ 'userStore.userData.user' || 'Admin' }}
                         </div>
                     </div>
                 </template>
@@ -74,13 +74,15 @@
                             </Card>
                         </div>
                         <div class="col lg:col-6 md:col-12 sm:col-12">
-                            <Card class="card">
-                                <template #content>
-                                    <div class="flex align-items-center justify-content-center">
-                                        <p style="color: #3cba5c;">Comunidade</p>
-                                    </div>
-                                </template>
-                            </Card>
+                            <nuxt-link to="/comunidade">
+                                <Card class="card">
+                                    <template #content>
+                                        <div class="flex align-items-center justify-content-center">
+                                            <p style="color: #3cba5c;">Comunidade</p>
+                                        </div>
+                                    </template>
+                                </Card>
+                            </nuxt-link>
                         </div>
                     </div>
                 </template>
@@ -95,9 +97,9 @@
     data() {
         return {
             userStore: useUserStore(),
-            value: 60,
-            valuedois: 30,
-            valuetres: 75,
+            value: 100,
+            valuedois: 58,
+            valuetres: 0,
         }
     }
 };
