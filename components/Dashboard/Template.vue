@@ -1,26 +1,7 @@
 <template>
     <div class="grid">
         <div class="menu-lateral col lg:col-2">
-            <Card class="p-2 user-menu" style="border: solid 1px rgba(255, 255, 255, 0.119); background-color: rgba(255, 255, 255, 0);">
-                <template #title>
-                    <div>
-                        <Card style="background-color: rgb(24, 24, 24);">
-                            <template #content>
-                                <div class="flex align-items-center justify-content-center" style="height: 5vh;">
-                                    <UserMenu class="absolute mt-6"/>
-                                </div>
-                            </template>
-                        </Card>
-                    </div>
-                </template>
-                <template #content>
-                    <div class="flex align-items-center justify-content-center">
-                        <div>
-                            {{ 'userStore.userData.user' || 'Admin' }}
-                        </div>
-                    </div>
-                </template>
-            </Card>
+            <UserLateralMenu />
         </div>
         <div class="col lg:col-10 sm:col-12">
             <Card class="container-card">
@@ -32,7 +13,7 @@
                                     <template #content>
                                         <div class="flex flex-column align-items-center justify-content-center">
                                             <P style="color:#3cba5c">Física 1 </P>
-                                            <Knob valueColor="#3cba5c" v-model="value" valueTemplate="{value}%" />
+                                            <Knob valueColor="#3cba5c" v-model="userStore.data.desempenho.fisicaOne" valueTemplate="{value}%" />
                                         </div>
                                     </template>
                                 </Card>
@@ -44,7 +25,7 @@
                                     <template #content>
                                         <div class="flex flex-column align-items-center justify-content-center">
                                             <p style="color:#3cba5c">Física 2</p>
-                                            <Knob valueColor="#3cba5c" v-model="valuedois" valueTemplate="{value}%" />
+                                            <Knob valueColor="#3cba5c" v-model="userStore.data.desempenho.fisicaTwo" valueTemplate="{value}%" />
                                         </div>
                                     </template>
                                 </Card>
@@ -56,7 +37,7 @@
                                     <template #content>
                                         <div class="flex flex-column align-items-center justify-content-center">
                                             <p style="color:#3cba5c">Física 3</p>
-                                            <Knob valueColor="#3cba5c" v-model="valuetres" valueTemplate="{value}%" />
+                                            <Knob valueColor="#3cba5c" v-model="userStore.data.desempenho.fisicaThree" valueTemplate="{value}%" />
                                         </div>
                                     </template>
                                 </Card>

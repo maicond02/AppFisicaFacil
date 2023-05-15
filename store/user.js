@@ -8,9 +8,16 @@ export const useUserStore = defineStore('USER', {
         baseUrl: 'http://localhost:3001/',
         userData:null,
         getUserData:null,
-        teste:{
-            user:'maicon'
-        }
+        data:{
+            user:'Admin',
+            password:'123',
+            avatar:'A',
+            desempenho:{
+                fisicaOne:100,
+                fisicaTwo:84,
+                fisicaThree:0
+            }
+        },
     }),
 
     getters: {

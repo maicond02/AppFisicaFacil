@@ -5,7 +5,7 @@
                 <div class="flex">
                     <Avatar label="U" size="large" style="background-color:#4caf4f; color: #ffffff"  />
                     <div>
-                        <p class="ml-2">Nome Autor</p>
+                        <p class="ml-2">{{ autor }}</p>
                     </div>
                 </div>
             </template>
@@ -34,6 +34,10 @@
     export default{
 
         props:{
+            autor:{
+                type: String,
+                required: false
+            },
             conteudo:{
                 type: String,
                 required: false

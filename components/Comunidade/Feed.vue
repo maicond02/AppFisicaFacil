@@ -19,6 +19,7 @@
                         </Card>
                         <div>
                             <ComunidadePost :conteudo="post"  v-for="(component, index) in components" :key="index" :is="component"/>
+                            <ComunidadePost conteudo="Preciso de ajuda em Física 1" autor="Maicon Alves"/>
                         </div>
                     </div>
                 </div>

@@ -15,13 +15,26 @@
             <template #content>
                 <div class="flex align-items-center justify-content-center">
                     <div>
-                        {{ 'userStore.userData.user' || 'Admin' }}
+                        {{ userStore.data.user }}
                     </div>
                 </div>
             </template>
         </Card>
     </div>
 </template>
+
+<script>
+    import { useUserStore } from "~/store/user";
+
+    export default{
+        data(){
+            return{
+                userStore: useUserStore(),
+            }
+        }
+    }
+
+</script>
 
 <style scoped>
     .user-menu :deep(.p-card-body){

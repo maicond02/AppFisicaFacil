@@ -1,5 +1,18 @@
 <template>
     <div>
-        <Avatar icon="pi pi-user" class="mr-2" size="large" style="background-color: #2196f3; color: #ffffff" shape="circle" />
+        <Avatar :label="userStore.data.avatar" size="large" style="background-color:#4caf4f; color: #ffffff"  />
     </div>
 </template>
+
+<script>
+
+    import { useUserStore } from '~/store/user'
+
+    export default{
+        data(){
+            return{
+                userStore: useUserStore(),
+            }
+        }
+    }
+</script>
