@@ -5,10 +5,10 @@
                 <div>
                     <div class="grid">
                         <div class="col-8">
-                            <Card>
+                            <Card style="">
                                 <template #content>
-                                    <div>
-                                        
+                                    <div class="flex align-items-center justify-content-center" style="height: 60vh;">
+                                        <Button class="w-1" severity="secondary" outlined icon="pi pi-play"/>
                                     </div>
                                 </template>
                             </Card>

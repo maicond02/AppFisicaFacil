@@ -19,16 +19,30 @@
                      to:'/dashboard'
                   },
                   {
-                     label:'Aulas',
-                  },
-                  {
                      label:'Materiais',
+                     to:'/materiais'
                   },
                   {
-                     label:'Fórum',
+                     label:'Comunidade',
+                     to:'/comunidade/'
                   },
                   {
-                     label:'Aulas ao vivo',
+                     label:'Aulas',
+                     items:[
+                        {
+                           label:'Fisica 1',
+                           to:'/aulas/fisica-1'
+  
+                        },
+                        {
+                           label:'Física 2',
+                           to:'/aulas/fisica-2'
+                        },
+                        {
+                           label:'Física 3',
+                           to:'/aulas/fisica-3'
+                        },
+                     ]
                   },
                   {
                      label:'Usuário',
@@ -43,7 +57,7 @@
                         {
                            label:'Sair',
                            icon:'pi pi-fw pi-user-minus',
-  
+                           to:'/'
                         },
                      ]
                   },

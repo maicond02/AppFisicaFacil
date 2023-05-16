@@ -18,7 +18,7 @@
                             </template>
                         </Card>
                         <div>
-                            <ComunidadePost :conteudo="post"  v-for="(component, index) in components" :key="index" :is="component"/>
+                            <ComunidadePost :conteudo="post" :autor="userStore.data.user"  v-for="(component, index) in components" :key="index" :is="component"/>
                             <ComunidadePost conteudo="Preciso de ajuda em Física 1" autor="Maicon Alves"/>
                         </div>
                     </div>
@@ -31,12 +31,14 @@
 <script>
 
     import Post from '~/components/Comunidade/Post.vue'
+    import { useUserStore } from '~/store/user';
 
     export default{
         data(){
             return{
+                userStore: useUserStore(),
                 components:[],
-                post:null
+                post:[]
             }
         },
         methods:{
