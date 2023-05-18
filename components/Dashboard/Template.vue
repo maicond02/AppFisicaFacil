@@ -46,13 +46,15 @@
                     </div>
                     <div class="grid">
                         <div class="col lg:col-6 md:col-12 sm:col-12">
-                            <Card class="card">
-                                <template #content>
-                                    <div class="flex align-items-center justify-content-center">
-                                        <p style="color:#3cba5c">Materiais</p>
-                                    </div>
-                                </template>
-                            </Card>
+                            <nuxt-link to="/materiais/">
+                                <Card class="card">
+                                    <template #content>
+                                        <div class="flex align-items-center justify-content-center">
+                                            <p style="color:#3cba5c">Materiais</p>
+                                        </div>
+                                    </template>
+                                </Card>
+                            </nuxt-link>
                         </div>
                         <div class="col lg:col-6 md:col-12 sm:col-12">
                             <nuxt-link to="/comunidade">
