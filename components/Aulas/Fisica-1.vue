@@ -4,19 +4,19 @@
             <template #content>
                 <div>
                     <div class="grid">
-                        <div class="col-8">
-                            <Card style="">
+                        <div class="col-12 md:col-12 lg:col-8">
+                            <Card>
                                 <template #content>
-                                    <div class="flex align-items-center justify-content-center" style="height: 60vh;">
-                                        <Button class="w-1" severity="secondary" outlined icon="pi pi-play"/>
+                                    <div class="flex align-items-center justify-content-center" style="height: 60vh; width: 100%;">
+                                        <Button  severity="secondary" outlined icon="pi pi-play"/>
                                     </div>
                                 </template>
                             </Card>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 md:col-12 lg:col-4">
                             <Card>
                                 <template #content>
-                                    <div>
+                                    <div style="height: 60vh; width: 100%;">
                                         <PanelMenu :model="items" class="w-full" />
                                     </div>
                                 </template>
