@@ -9,17 +9,17 @@
                                 <template #header>
                                     <div class="profile-banner">
                                         <div class="profile-pic">
-                                            <Avatar icon="pi pi-user" class="mr-2" size="xlarge" shape="circle" />
+                                            <UserMenu />
                                         </div>
                                     </div>
                                 </template>
                                 <template #content>
-                                    <div>
-                                        Sou o Admin
+                                    <div class="ml-2">
+                                        Admin
                                     </div>
                                 </template>
                                 <template #footer>
-                                    <div>
+                                    <div class="ml-1">
                                        <p>Sou um estudante de Engenharia de Computação</p> 
                                     </div>
                                 </template>
@@ -28,7 +28,7 @@
                         <div class="col-12">
                             <Card>
                                 <template #header>
-                                    <div>
+                                    <div class="ml-4">
                                         <h3>About</h3>
                                     </div>
                                     <div>
@@ -36,18 +36,9 @@
                                 </template>
                                 <template #content>
                                     <div>
-                                        <h3>About</h3>
+                                        <p>Sou um estudante de engenharia de computação buscando melhorar minhas competências de física !</p>
                                     </div>
                                     <div>
-                                    </div>
-                                </template>
-                            </Card>
-                        </div>
-                        <div class="col-12">
-                            <Card>
-                                <template #content>
-                                    <div>
-                                        
                                     </div>
                                 </template>
                             </Card>
@@ -56,18 +47,50 @@
                     <div class="col-4">
                         <div class="col-12">
                             <Card>
+                                <template #header>
+                                    <div class="m-4">
+                                        <h3>Comunidade</h3>
+                                    </div>
+                                </template>
                                 <template #content>
-                                    <div>
-                                        
+                                    <div class="flex flex-column">
+                                        <nuxt-link to="/comunidade">
+                                            <div class="flex">
+                                                <Button icon="pi pi-thumbs-up" severity="success" outlined />
+                                                <p class="m-2">Leonardo curtiu sua postagem</p>
+                                            </div>
+                                        </nuxt-link>
+                                        <nuxt-link to="/comunidade">
+                                            <div class="flex mt-2">
+                                                <Button icon="pi pi-thumbs-up" severity="success" outlined />
+                                                <p class="m-2">Maicon curtiu sua postagem</p>
+                                            </div>
+                                        </nuxt-link>
+                                        <nuxt-link to="/comunidade">
+                                            <div class="flex mt-2">
+                                                <Button icon="pi pi-comments" severity="success" outlined/>
+                                                <p class="m-2">Maicon comentou sua postagem</p>
+                                            </div>
+                                        </nuxt-link>
                                     </div>
                                 </template>
                             </Card>
                         </div>
                         <div class="col-12">
                             <Card>
+                                <template #header>
+                                    <div class="m-4">
+                                        <h3>Aulas</h3>
+                                    </div>
+                                </template>
                                 <template #content>
-                                    <div>
-                                        
+                                    <div class="flex flex-column">
+                                        <nuxt-link to="/aulas/fisica-2">
+                                            <div class="flex mt-2">
+                                                <Button icon="pi pi-window-maximize" severity="success" outlined/>
+                                                <p class="m-2">Continue Física 2</p>
+                                            </div>
+                                        </nuxt-link>
                                     </div>
                                 </template>
                             </Card>
@@ -89,7 +112,7 @@
         background-color: rgba(255, 255, 255, 0);
     }
     .profile-banner{
-        background-color: white;
+        background-color: #236325;
         height: 5rem;
     }
     .profile-pic{
@@ -97,5 +120,9 @@
         position: absolute;
         margin-top: 3rem;
         margin-left: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color: white;
     }
 </style>

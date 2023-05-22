@@ -83,7 +83,7 @@ export default defineNuxtPlugin(nuxtApp => {
     nuxtApp.vueApp.component('Dialog',Dialog)
     nuxtApp.vueApp.component('OverlayPanel', OverlayPanel)
     nuxtApp.vueApp.component('Menubar',Menubar)
-    nuxtApp.vueApp.component('TabMenu ', TabMenu)
+    nuxtApp.vueApp.component('TabMenu', TabMenu)
     nuxtApp.vueApp.component('Dropdown',Dropdown)
     nuxtApp.vueApp.component('MultiSelect',MultiSelect)
     nuxtApp.vueApp.component('Toolbar',Toolbar)
