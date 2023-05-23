@@ -9,9 +9,9 @@ export const useUserStore = defineStore('USER', {
         userData:null,
         getUserData:null,
         data:{
-            user:'Admin',
+            user:'Maicon Alves',
             password:'123',
-            avatar:'A',
+            avatar:'M',
             desempenho:{
                 fisicaOne:100,
                 fisicaTwo:84,

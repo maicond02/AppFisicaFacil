@@ -35,9 +35,11 @@
                   },
                   {
                      label:'Sobre',
+                     to:'/about'
                   },
                   {
                      label:'Suporte',
+                     to:'support'
                   },
                 ]
             }
