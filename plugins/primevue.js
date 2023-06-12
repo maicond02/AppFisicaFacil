@@ -59,6 +59,7 @@ import InputSwitch from 'primevue/inputswitch';
 import ToggleButton from 'primevue/togglebutton';
 import Image from 'primevue/image';
 import Knob from 'primevue/knob';
+import Divider from 'primevue/divider';
 
 export default defineNuxtPlugin(nuxtApp => {
     nuxtApp.vueApp.use(ToastService)
@@ -120,5 +121,6 @@ export default defineNuxtPlugin(nuxtApp => {
     nuxtApp.vueApp.component('InputSwitch  ', InputSwitch)
     nuxtApp.vueApp.component('Image', Image)
     nuxtApp.vueApp.component('Knob', Knob)
+    nuxtApp.vueApp.component('Divider', Divider)
   })
   
