@@ -28,12 +28,6 @@
                      to:'/'
                   },
                   {
-                     label:'Aulas',
-                  },
-                  {
-                     label:'Métodos',
-                  },
-                  {
                      label:'Sobre',
                      to:'/about'
                   },
@@ -71,4 +65,12 @@
             display: none;
         }
     }
+
+    :deep(.p-menuitem-link){
+        background-color: rgb(18, 18, 18) !important;
+    }
+
+   :deep(.p-menubar-root-list){
+    border: none !important;
+   } 
 </style>

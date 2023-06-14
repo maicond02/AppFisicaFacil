@@ -3,15 +3,15 @@
         <Card class="container-card">
             <template #content>
                 <div class="grid">
-                    <div class="col-2">
+                    <div class="hidden md:block col-2">
                         <UserLateralMenu />
                     </div>
-                    <div class="col-10">
+                    <div class="col-12 md:col-10">
                         <Card>
                             <template #content>
                                 <div>
                                     <div class="flex justify-content-center">
-                                        <InputText type="text" v-model="post"/>
+                                        <InputText class="w-8 md:w-10" type="text" v-model="post"/>
                                         <Button @click="addComponent()" label="Publicar" class="ml-2" severity="success" outlined/>
                                     </div>
                                 </div>

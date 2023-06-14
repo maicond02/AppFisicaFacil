@@ -3,7 +3,7 @@
         <Card>
             <template #content>
                 <div class="grid">
-                    <div class="col-8">
+                    <div class="col-12 md:col-8">
                         <div class="col-12">
                             <Card>
                                 <template #header>
@@ -15,7 +15,7 @@
                                 </template>
                                 <template #content>
                                     <div class="ml-2">
-                                        Admin
+                                        Maicon Alves
                                     </div>
                                 </template>
                                 <template #footer>
@@ -44,7 +44,7 @@
                             </Card>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 md:col-4">
                         <div class="col-12">
                             <Card>
                                 <template #header>
@@ -63,13 +63,13 @@
                                         <nuxt-link to="/comunidade">
                                             <div class="flex mt-2">
                                                 <Button icon="pi pi-thumbs-up" severity="success" outlined />
-                                                <p class="m-2">Maicon curtiu sua postagem</p>
+                                                <p class="m-2">João Marcos curtiu sua postagem</p>
                                             </div>
                                         </nuxt-link>
                                         <nuxt-link to="/comunidade">
                                             <div class="flex mt-2">
                                                 <Button icon="pi pi-comments" severity="success" outlined/>
-                                                <p class="m-2">Maicon comentou sua postagem</p>
+                                                <p class="m-2">Vinícius comentou sua postagem</p>
                                             </div>
                                         </nuxt-link>
                                     </div>

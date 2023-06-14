@@ -1,14 +1,11 @@
 <template>
     <div class="grid">
-        <div class="col-2">
-            <UserLateralMenu />
-        </div>
-        <div class="col-10">
+        <div class="col-12">
             <Card class="container-card">
                 <template #content>
                     <div>
                         <div class="grid">
-                            <div class="col lg:col-4 sm:col-12">
+                            <div class="col-12 lg:col-4">
                                 <nuxt-link to="/aulas/fisica-1">
                                     <Card class="card">
                                         <template #content>
@@ -19,7 +16,7 @@
                                     </Card>
                                 </nuxt-link>
                             </div>
-                            <div class="col lg:col-4 sm:col-12">
+                            <div class="col-12 lg:col-4">
                                 <nuxt-link to="/aulas/fisica-1">
                                     <Card class="card">
                                         <template #content>
@@ -30,7 +27,7 @@
                                     </Card>
                                 </nuxt-link>
                             </div>
-                            <div class="col lg:col-4 sm:col-12">
+                            <div class="col-12 lg:col-4">
                                 <nuxt-link to="/aulas/fisica-1">
                                     <Card class="card">
                                         <template #content>
